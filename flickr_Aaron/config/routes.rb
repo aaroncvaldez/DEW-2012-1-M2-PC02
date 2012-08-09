@@ -1,4 +1,7 @@
 FlickrAaron::Application.routes.draw do
+
+root :to => "photos#index"
+match "show" => "photos#show",:as => :photo
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
