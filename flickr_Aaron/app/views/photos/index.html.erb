@@ -1,0 +1,9 @@
+<h1> Aplicacion flickr </h1>
+
+<%= form_tag(:photo) do %>
+<%= label_tag(:url, "Ingrese el TAG:") %>
+<%= text_field_tag(:url) %> <br />
+<%= label_tag(:numero, "Imagenes por pagina:") %>
+<%= text_field_tag(:numero) %> <br />
+<%= submit_tag("Enviar") %>
+<% end %>
